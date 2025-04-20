@@ -1,0 +1,73 @@
+{
+    "api": {
+        "publicKey": "111111111111111111111111=",
+        "privateKey": "S 111111111111111111111111 ="
+    },
+    "futures": {
+        "tradingCoin": "BTC",
+        "maxDropPercentage": 5,
+        "totalAmount": 200,
+        "orderCount": 6,
+        "incrementPercentage": 50,
+        "takeProfitPercentage": 0.2,
+        "leverage": 5,
+        "positionSide": "LONG"
+    },
+    "actions": {
+        "cancelAllOrders": true,
+        "restartAfterTakeProfit": false,
+        "autoRestartNoFill": true,
+        "closeAllPositionsOnStop": true,
+        "cancelExistingOrdersOnStart": false
+    },
+    "advanced": {
+        "minOrderAmount": 10,
+        "priceTickSize": 0.01,
+        "checkOrdersIntervalMinutes": 1,
+        "monitorIntervalSeconds": 15,
+        "noFillRestartMinutes": 1,
+        "maxPositionRisk": 0.2,
+        "fundingRateLimit": 0.001,
+        "slippageTolerance": 0.05,
+        "apiTimeout": 30000
+    },
+    "riskManagement": {
+        "stopLossPercentage": 3,
+        "dynamicStopLoss": false,
+        "trailingStopActivation": 1,
+        "trailingStopDistance": 0.5,
+        "maxLeverage": 10,
+        "maxDrawdownPercentage": 15
+    },
+    "quantityPrecisions": {
+        "BTC": 5,
+        "ETH": 4,
+        "SOL": 2,
+        "DEFAULT": 2
+    },
+    "pricePrecisions": {
+        "BTC": 0,
+        "ETH": 2,
+        "SOL": 2,
+        "DEFAULT": 2
+    },
+    "minQuantities": {
+        "BTC": 0.00001,
+        "ETH": 0.001,
+        "SOL": 0.01,
+        "DEFAULT": 0.1
+    },
+    "websocket": {
+        "url": "wss://ws.backpack.exchange",
+        "options": {
+            "reconnect": true,
+            "reconnectInterval": 5000,
+            "maxReconnectAttempts": 5,
+            "pingInterval": 60000,
+            "pongTimeout": 120000,
+            "subscriptionTimeout": 5000,
+            "messageQueueSize": 1000,
+            "messageTimeout": 30000
+        }
+    }
+} 
